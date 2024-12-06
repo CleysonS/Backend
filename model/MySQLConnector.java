@@ -2,8 +2,7 @@ package model;
 import java.sql.*;
 
 public class MySQLConnector {
-    public static Connection conectar() throws Exception {
-        String status = "Nada aconteceu ainda...";
+    public static Connection conectar() {
         String mysqlHost = "127.0.0.1";
         String mysqlDb = "db_senac";
         String mysqlUser = "root";
@@ -14,12 +13,10 @@ public class MySQLConnector {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver").getDeclaredConstructor().newInstance();
             conn = DriverManager.getConnection(mysqlUrl);
-            status = "Conexão realizada com sucesso!";
+            // System.out.println("Conexão realizada com sucesso!");
         } catch (Exception e) {
-            status = "Ops! Algo de errado não está certo com a conexão com o banco de dados MySQL! Mensagem do servidor: " + e;
+            System.err.println("Ops! Algo de errado não está certo com a conexão com o banco de dados MySQL! Mensagem do servidor: " + e);
         }
-        // System.out.println(status);
-        status.length();
         return conn;
     }
 }
