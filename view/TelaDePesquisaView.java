@@ -183,7 +183,7 @@ public class TelaDePesquisaView extends JFrame {
                 }
             }
         );
-
+        IconeApp.setIcon(this);
         setSize(300,340);
         setVisible(true);
 

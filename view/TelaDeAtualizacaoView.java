@@ -185,7 +185,7 @@ public class TelaDeAtualizacaoView extends JFrame {
                 }
             }
         );
-
+        IconeApp.setIcon(this);
         setSize(350,350);
         setVisible(true);
     }

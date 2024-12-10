@@ -57,7 +57,16 @@ public class TelaDeLoginView extends JFrame {
                 }
             }
         );
+       // lblFoto.setIcon(new ImageIcon(new ImageIcon(InterfaceView.localViewFolder + "\\imagem-padrao.jpg").getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT)));
 
+        //ImageIcon icon = new ImageIcon("\\imagem-padrao.jpg");  // Substitua pelo caminho correto
+        //setIconImage(icon.getImage());
+
+        //setIcon();
+        //Image Icone = Toolkit.getDefaultToolkit().getImage("src\\view\\icones.png"); 
+        //setIconImage(IconeApp);
+        IconeApp.setIcon(this);
+ 
         setSize(170,140);
         setVisible(true);
     }

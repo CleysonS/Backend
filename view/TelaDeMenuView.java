@@ -125,7 +125,7 @@ public class TelaDeMenuView extends JFrame {
                 }
             }
         );
-
+        IconeApp.setIcon(this);
         setSize(300,300);
         setVisible(true);
     }
